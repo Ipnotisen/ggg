@@ -1,0 +1,436 @@
+/* Réinitialisation de la mise en forme */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* Méthode de clearfix pour les éléments flottants */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Styles généraux */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f9f9f9;
+}
+a {
+	text-decoration: none;
+	color: #007bff;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	color: #333;
+	margin: 1rem 0;
+}
+p {
+	margin: 0 0 1rem;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* Styles de la barre de navigation */
+header {
+	background-color: rgba(255, 255, 255, 0.7);
+	backdrop-filter: saturate(180%) blur(4px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	z-index: 99;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.logo {
+	float: left;
+	height: 70px;
+	line-height: 55px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+}
+.logo img {
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+nav a:hover, nav a:focus {
+	color: #000;
+}
+.nav-mobile.active {
+	transform: translateY(0);
+}
+.nav-mobile.active li {
+	opacity: 1;
+	transform: translateY(0);
+}
+.nav-mobile li {
+	opacity: 1;
+	transform: translateY(-20px);
+	transition: all 0.3s;
+}
+
+/* Styles de la section héros */
+.hero {
+	background-image: url("hero-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 350px 0;
+}
+.hero h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+.hero p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	color: #333;
+}
+.btn {
+	display: inline-block;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.btn-primary {
+	background-color: #c6e3ec;
+	color: #333;
+	box-shadow: -2px 2px 8px rgb(0, 195, 255);
+	border-radius: 90px;
+}
+.btn-primary:hover, .btn-primary:focus {
+	background-color:  #efd4f9;
+	box-shadow: -2px 2px 8px rgb(255, 0, 239);
+}
+
+.btn-primary:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-secondary {
+	background-color: #f9f9f9;
+	color: #333;
+	border: 1px solid #ccc;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+	background-color: #f4f4f4;
+	border-color: #adadad;
+}
+.btn-secondary:active {
+	transform: translateY(2px);
+	box-shadow: none;
+	border-color: #999;
+}
+/* Styles de la section fonctionnalités */
+.features {
+	background-color: #fff;
+	padding: 80px 0;
+}
+.feature {
+	text-align: center;
+	padding: 40px;
+}
+.feature img {
+	display: block;
+	margin: 0 auto 20px;
+	max-width: 80px;
+}
+/* Styles de la section témoignages */
+.testimonials {
+	background-color: #f9f9f9;
+	padding: 80px 0;
+}
+.testimonial {
+	text-align: center;
+	padding: 40px;
+}
+.testimonial img {
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 50%;
+	max-width: 80px;
+}
+.testimonial blockquote {
+	font-style: italic;
+	margin-bottom: 20px;
+}
+.testimonial cite {
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	color: #333;
+}
+/* Styles de la section tarifs */
+.pricing {
+	background-color: #fff;
+	padding: 80px 0;
+}
+.pricing h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.pricing-table {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.pricing-option {
+	text-align: center;
+	padding: 40px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.pricing-option.recommended {
+	border-color: #007bff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.pricing-option h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.pricing-option .price {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.pricing-option ul {
+	list-style: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.pricing-option ul li {
+	margin-bottom: 10px;
+}
+/* Styles du footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 40px 0;
+}
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer .copyright {
+	font-size: 14px;
+}
+footer .social-links {
+	display: flex;
+	align-items: center;
+}
+footer .social-links img {
+	height: 20px;
+	margin-left: 10px;
+}
+/* Médias queries */
+@media (min-width: 992px) {
+	.nav-container {
+		background-color: transparent;
+	}
+	.menu-toggle-mobile {
+		display: none;
+	}
+	.nav-mobile {
+		display: block;
+		position: static;
+		background-color: transparent;
+		padding-top: 15px;
+		text-align: left;
+	}
+	.nav-mobile li {
+		display: inline-block;
+		margin: 0 20px;
+		font-size: 16px;
+	}
+	.nav-mobile a {
+		color: #333;
+	}
+}
+@media (max-width: 991px) {
+	.logo {
+		font-size: 20px;
+	}
+	.nav-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		background-color: #fff;
+	}
+	.menu-toggle-mobile {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		z-index: 999;
+		padding: 10px;
+		cursor: pointer;
+		transition: all 0.3s;
+		border: 0;
+		background-color: transparent;
+	}
+	.mobile__line {
+		display: block;
+		width: 30px;
+		height: 3px;
+		background-color: #333;
+		transition: all 0.3s;
+	}
+	.mobile__line:nth-of-type(2) {
+		margin: 6px 0;
+	}
+	.menu-toggle-mobile.active .mobile__line:nth-of-type(1) {
+		transform: rotate(45deg);
+		transform-origin: 1% 0%;
+  		transition: transform 0.4s ease-in-out;
+	}
+	.menu-toggle-mobile.active .mobile__line:nth-of-type(2) {
+		transform: scaleY(0);
+		transition: transform 0.2s ease-in-out;
+	}
+	.menu-toggle-mobile.active .mobile__line:nth-of-type(3) {
+		transform: rotate(-45deg);
+		transform-origin: 10% 100%;
+  		transition: transform 0.4s ease-in-out;
+	}
+	.nav-desktop {
+		display: none;
+	}
+	.nav-mobile {
+			display: none;
+			position: fixed;
+			top: 60px;
+			left: 0;
+			right: 0;
+			z-index: 998;
+			padding: 50px 100px;
+			background-color: rgba(255, 255, 255, 0.8);
+			backdrop-filter: saturate(180%) blur(20px);
+			text-align: center;
+		}
+		.nav-mobile.active {
+			display: block;
+		}
+		.nav-mobile li {
+			display: block;
+			margin: 20px 0;
+		}
+		.nav-mobile a {
+			display: block;
+			color: #333;
+			font-size: 18px;
+			text-decoration: none;
+			transition: all 0.3s;
+			border: solid;
+		}
+		.nav-mobile a:hover,
+		.nav-mobile a:focus {
+			color: #000;
+		}
+		.menu-toggle-mobile.active ~ nav .nav-mobile {
+			display: block;
+			border-bottom: solid;
+		}
+	.hero {
+		padding: 300px 0;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		padding: 0 10px;
+	}
+	.logo {
+		float: none;
+		height: 70px;
+		line-height: 70px;
+		font-size: 18px;
+	}
+	nav {
+		float: none;
+		text-align: center;
+	}
+	nav a {
+		display: block;
+		height: 50px;
+		line-height: 50px;
+		padding: 0;
+		font-size: 16px;
+	}
+	.hero {
+		padding: 300px 0;
+	}
+	.hero h1 {
+		font-size: 30px;
+	}
+	.hero p {
+		font-size: 16px;
+	}
+	.features .feature,
+	.testimonials .testimonial,
+	.pricing .pricing-option {
+		padding: 20px;
+	}
+}
+@media (max-width: 575px) {
+	.hero {
+		padding: 40px 0;
+	}
+	.features .feature,
+	.testimonials .testimonial,
+	.pricing .pricing-option {
+		padding: 10px;
+	}
+	.pricing .pricing-table {
+		flex-wrap: wrap;
+	}
+	.pricing .pricing-option {
+		width: 100%;
+	}
+}

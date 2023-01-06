@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Votre service de vente de sites web avec hébergement pour artisans</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+</head>
+<body>
+<header>
+	<div class="container">
+		<a href="#" class="logo">
+			<img src="logo.png" alt="Logo">
+		</a>
+		<div class="nav-container">
+			<button class="menu-toggle-mobile">
+				<div class="mobile__line"></div>
+				<div class="mobile__line"></div>
+				<div class="mobile__line"></div>
+			</button>
+			<nav>
+				<ul class="nav-mobile">
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">À propos</a></li>
+					<li><a href="#">Tarifs</a></li>
+					<li><a href="#">Témoignages</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="hero" id="top">
+		<div class="container" style="max-width: 700px; padding-right: 50%;">
+			<h1>Donnez une présence en ligne professionnelle à votre entreprise</h1>
+			<p>Offrez à votre entreprise une présence en ligne de qualité grâce à nos packages tout-en-un : site web personnalisé, hébergement sécurisé et assistance technique dédiée.</p>
+			<a href="#" class="btn btn-primary">En savoir plus</a>
+		</div>
+	</section>
+	<section class="features">
+		<div class="container">
+			<div class="feature">
+				<img src="icon-design.png" alt="Icône design">
+				<h2>Design personnalisé</h2>
+				<p>Faites-vous remarquer grâce à un site web unique et adapté à votre image de marque.</p>
+			</div>
+			<div class="feature">
+				<img src="icon-responsive.png" alt="Icône responsive">
+				<h2>Adaptatif sur tous les écrans</h2>
+				<p>Donnez une expérience fluide à vos visiteurs quel que soit le support utilisé.</p>
+			</div>
+			<div class="feature">
+				<img src="icon-support.png" alt="Icône support">
+								<h2>Assistance dédiée</h2>
+				<p>Bénéficiez d'un accompagnement personnalisé de notre équipe de professionnels pour mettre en place et gérer votre site.</p>
+			</div>
+			<div class="feature">
+				<img src="icon-secure.png" alt="Icône sécurité">
+				<h2>Hébergement sécurisé</h2>
+				<p>Profitez d'un hébergement fiable et sécurisé pour votre site et vos données.</p>
+			</div>
+		</div>
+	</section>
+	<section class="testimonials">
+		<div class="container">
+			<h2>Ils nous font confiance</h2>
+			<div class="testimonial">
+				<img src="avatar-1.jpg" alt="Avatar">
+				<blockquote>
+					<p>Depuis que j'ai confié la création de mon site à votre équipe, ma visibilité en ligne a considérablement augmenté. Je suis vraiment satisfait du résultat et de l'assistance que j'ai reçue.</p>
+				</blockquote>
+				<cite>- Marie Dupont, Artisan boulanger</cite>
+			</div>
+			<div class="testimonial">
+				<img src="avatar-2.jpg" alt="Avatar">
+				<blockquote>
+					<p>Grâce à votre offre tout-en-un, j'ai pu créer rapidement et facilement un site professionnel qui reflète parfaitement mon activité. Je recommande vivement votre service.</p>
+				</blockquote>
+				<cite>- Julien Martin, Artisan menuisier</cite>
+			</div>
+		</div>
+	</section>
+	<section class="pricing">
+		<div class="container">
+			<h2>Nos tarifs</h2>
+			<div class="pricing-table">
+				<div class="pricing-option">
+					<h3>Package Essentiel</h3>
+					<div class="price">299 €</div>
+					<ul>
+						<li>Site web de 5 pages</li>
+						<li>Hébergement de 1 an</li>
+						<li>Assistance technique</li>
+					</ul>
+					<a href="#" class="btn btn-secondary">Choisir</a>
+				</div>
+				<div class="pricing-option recommended">
+					<h3>Package Premium</h3>
+					<div class="price">499 €</div>
+					<ul>
+						<li>Site web de 10 pages</li>
+						<li>Hébergement de 1 an</li>
+						<li>Assistance technique</li>
+						<li>Formulaire de contact</li>
+						<li>Integration de réseaux sociaux</li>
+					</ul>
+					<a href="#" class="btn btn-secondary">Choisir</a>
+				</div>
+				<div class="pricing-option">
+					<h3>Package Pro</h3>
+					<div class="price">799 €</div>
+					<ul>
+						<li>Site web illimité</li>
+						<li>Hébergement de 1 an</li>
+						<li>Assistance technique</li>
+						<li>Formulaire de contact</li>
+						<li>Integration de réseaux sociaux</li>
+						<li>E-commerce</li>
+					</ul>
+					<a href="#" class="btn btn-secondary">Choisir</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="copyright">&copy; Votre entreprise</div>
+			<div class="social-links">
+				<a href="#"><img src="icon-facebook.png" alt="Icône Facebook"></a>
+				<a href="#"><img src="icon-twitter.png" alt="Icône Twitter"></a>
+				<a href="#"><img src="icon-instagram.png" alt="Icône Instagram"></a>
+			</div>
+		</div>
+	</footer>
+	<script>
+	const toggleMobile = document.querySelector(".menu-toggle-mobile");
+	const navMobile = document.querySelector(".nav-mobile");
+
+	toggleMobile.addEventListener("click", function() {
+		this.classList.toggle("active");
+		navMobile.classList.toggle("active");
+	});
+	</script>
+
+	<script>
+	VANTA.CLOUDS({
+	el: "#top",
+	mouseControls: true,
+	touchControls: true,
+	gyroControls: false,
+	minHeight: 200.00,
+	minWidth: 200.00,
+	skyColor: 0x50a0be,
+	cloudColor: 0xb2adde,
+	sunColor: 0xf118ff,
+	sunGlareColor: 0xcf32ff,
+	sunlightColor: 0xc332ff
+	})
+	</script>
+</body>
+</html>
