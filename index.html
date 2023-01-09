@@ -3,15 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Votre service de vente de sites web avec hébergement pour artisans</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
 	<div class="container">
 		<a href="#" class="logo">
-			<img src="logo.png" alt="Logo">
+			<img src="images/logo.png" alt="Logo">
 		</a>
 		<div class="nav-container">
 			<button class="menu-toggle-mobile">
@@ -33,32 +31,37 @@
 </header>
 <main>
 	<section class="hero" id="top">
-		<div class="container" style="max-width: 700px; padding-right: 50%;">
-			<h1>Donnez une présence en ligne professionnelle à votre entreprise</h1>
-			<p>Offrez à votre entreprise une présence en ligne de qualité grâce à nos packages tout-en-un : site web personnalisé, hébergement sécurisé et assistance technique dédiée.</p>
-			<a href="#" class="btn btn-primary">En savoir plus</a>
+		<div class="hero-top">
+			<div class="container hero-grid1">
+				<h1>Donnez une présence en ligne <span class="hero-title-bg">professionnelle</span> à votre entreprise</h1>
+				<p>Offrez à votre entreprise une présence en ligne de qualité grâce à nos packages tout-en-un : site web personnalisé, hébergement sécurisé et assistance technique dédiée.</p>
+				<a href="#" class="btn btn-primary">En savoir plus</a>
+			</div>
+			<div class="container hero-grid2">
+				<img class="hero-img" src="images/personal-website(2).png"></img>
+			</div>
 		</div>
 	</section>
 	<section class="features">
-		<div class="container">
+		<div class="container feature-bg">
 			<div class="feature">
-				<img src="icon-design.png" alt="Icône design">
-				<h2>Design personnalisé</h2>
+				<img src="images/icon-design.svg" alt="Icône design">
+				<h2>Design <u>personnalisé</u></h2>
 				<p>Faites-vous remarquer grâce à un site web unique et adapté à votre image de marque.</p>
 			</div>
 			<div class="feature">
-				<img src="icon-responsive.png" alt="Icône responsive">
-				<h2>Adaptatif sur tous les écrans</h2>
+				<img src="images/icon-responsive.svg" alt="Icône responsive">
+				<h2><u>Adaptatif</u> sur tous les écrans</h2>
 				<p>Donnez une expérience fluide à vos visiteurs quel que soit le support utilisé.</p>
 			</div>
 			<div class="feature">
-				<img src="icon-support.png" alt="Icône support">
-								<h2>Assistance dédiée</h2>
+				<img src="images/icon-support.svg" alt="Icône support">
+				<h2>Assistance <u>dédiée</u></h2>
 				<p>Bénéficiez d'un accompagnement personnalisé de notre équipe de professionnels pour mettre en place et gérer votre site.</p>
 			</div>
 			<div class="feature">
-				<img src="icon-secure.png" alt="Icône sécurité">
-				<h2>Hébergement sécurisé</h2>
+				<img src="images/icon-secure.svg" alt="Icône sécurité">
+				<h2>Hébergement <u>sécurisé</u></h2>
 				<p>Profitez d'un hébergement fiable et sécurisé pour votre site et vos données.</p>
 			</div>
 		</div>
@@ -142,22 +145,6 @@
 		this.classList.toggle("active");
 		navMobile.classList.toggle("active");
 	});
-	</script>
-
-	<script>
-	VANTA.CLOUDS({
-	el: "#top",
-	mouseControls: true,
-	touchControls: true,
-	gyroControls: false,
-	minHeight: 200.00,
-	minWidth: 200.00,
-	skyColor: 0x50a0be,
-	cloudColor: 0xb2adde,
-	sunColor: 0xf118ff,
-	sunGlareColor: 0xcf32ff,
-	sunlightColor: 0xc332ff
-	})
 	</script>
 </body>
 </html>

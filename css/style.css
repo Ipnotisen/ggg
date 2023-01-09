@@ -1,3 +1,12 @@
+@font-face {
+	font-family: ClashGrotesk;
+	src: url(../fonts/ClashGrotesk-Medium.otf);
+}
+:root{
+	--font-dark-color: #000;
+	--font-main-family: ClashGrotesk;
+	--font-text-family: Synonym;
+}
 /* Réinitialisation de la mise en forme */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,11 +35,15 @@ time, mark, audio, video {
 	display: table;
 }
 /* Styles généraux */
+html, body * {
+	scrollbar-color: #c4c4c4 transparent;
+	scrollbar-width: thin;
+}
 body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #333;
+	color: var(--font-dark-color);
 	background-color: #f9f9f9;
 }
 a {
@@ -38,10 +51,11 @@ a {
 	color: #007bff;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	color: #333;
+	font-family: var(--font-main-family);
+	font-weight: 900;
+	color: var(--font-dark-color);
 	margin: 1rem 0;
+	font-size: 2.5rem;
 }
 p {
 	margin: 0 0 1rem;
@@ -111,21 +125,47 @@ nav a:hover, nav a:focus {
 
 /* Styles de la section héros */
 .hero {
-	background-image: url("hero-bg.jpg");
+	background-image: url("../images/hero-bg2.jpg");
 	background-size: cover;
 	background-position: center;
-	color: #fff;
+	color: var(--font-dark-color);
 	padding: 350px 0;
+	max-height: 250px;
 }
+.hero-img{
+	margin-top: -30%;
+}
+.hero-top {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+} 
+.hero-grid1 { 
+	grid-area: 1 / 1 / 2 / 2;
+	max-width: 700px;
+	margin-top: -10%;
+}
+.hero-grid2 { 
+	grid-area: 1 / 2 / 2 / 3; 
+	max-width: 700px;
+} 
 .hero h1 {
-	font-size: 36px;
+	font-size: 3rem;
 	margin-bottom: 20px;
 }
+.hero-title-bg{
+	background: linear-gradient(82deg,#ff00ef 10%,#002fff 90%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .hero p {
-	font-size: 18px;
-	font-weight: 400;
+	font-size: 1.3rem;
+	font-weight: 700;
 	margin-bottom: 40px;
-	color: #333;
+	color: var(--font-dark-color);
 }
 .btn {
 	display: inline-block;
@@ -138,14 +178,16 @@ nav a:hover, nav a:focus {
 	transition: all 0.3s;
 }
 .btn-primary {
-	background-color: #c6e3ec;
-	color: #333;
-	box-shadow: -2px 2px 8px rgb(0, 195, 255);
+	/* background-color: #c6e3ec; */
+	color: var(--font-dark-color);
+	background-color: #ff00ef;
+	box-shadow: -2px 2px 8px rgb(255, 0, 239);
 	border-radius: 90px;
 }
 .btn-primary:hover, .btn-primary:focus {
-	background-color:  #efd4f9;
-	box-shadow: -2px 2px 8px rgb(255, 0, 239);
+	/* background-color:  #efd4f9; */
+	background-color: #00c3ff;
+	box-shadow: -2px 2px 8px rgb(0, 195, 255);
 }
 
 .btn-primary:active {
@@ -154,7 +196,7 @@ nav a:hover, nav a:focus {
 }
 .btn-secondary {
 	background-color: #f9f9f9;
-	color: #333;
+	color: var(--font-dark-color);
 	border: 1px solid #ccc;
 }
 .btn-secondary:hover, .btn-secondary:focus {
@@ -166,7 +208,7 @@ nav a:hover, nav a:focus {
 	box-shadow: none;
 	border-color: #999;
 }
-/* Styles de la section fonctionnalités */
+/* Styles de la section fonctionnalités */	
 .features {
 	background-color: #fff;
 	padding: 80px 0;
@@ -175,10 +217,17 @@ nav a:hover, nav a:focus {
 	text-align: center;
 	padding: 40px;
 }
+.feature-bg{
+	max-width: 700px;
+	background-color: #f2efef;
+}
 .feature img {
 	display: block;
 	margin: 0 auto 20px;
-	max-width: 80px;
+	max-width: 90px;
+}
+.feature p{
+	font-size: 1.3rem;
 }
 /* Styles de la section témoignages */
 .testimonials {
@@ -203,7 +252,7 @@ nav a:hover, nav a:focus {
 	display: block;
 	font-style: normal;
 	font-weight: 600;
-	color: #333;
+	color: var(--font-dark-color);
 }
 /* Styles de la section tarifs */
 .pricing {
@@ -381,6 +430,12 @@ footer .social-links img {
 	.hero {
 		padding: 300px 0;
 	}
+	.hero h1 {
+		font-size: 2rem;
+	}
+	.hero-grid1{
+		margin-top: -25%;
+	}
 }
 @media (max-width: 767px) {
 	.container {
@@ -419,8 +474,40 @@ footer .social-links img {
 	}
 }
 @media (max-width: 575px) {
+	.container {
+		padding: 0 10px;
+	}
+	.logo {
+		float: none;
+		height: 70px;
+		line-height: 70px;
+		font-size: 18px;
+	}
+	nav {
+		float: none;
+		text-align: center;
+	}
+	nav a {
+		display: block;
+		height: 50px;
+		line-height: 50px;
+		padding: 0;
+		font-size: 16px;
+	}
 	.hero {
-		padding: 40px 0;
+		padding: 200px 0;
+	}
+	.hero-img{
+		margin-top: 0%;
+	}
+	.hero h1 {
+		font-size: 1.5rem;
+	}
+	.hero-grid1{
+		margin-top: -45%;
+	}
+	.hero p {
+		font-size: 1rem;
 	}
 	.features .feature,
 	.testimonials .testimonial,
