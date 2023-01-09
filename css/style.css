@@ -285,7 +285,6 @@ nav a:hover, nav a:focus {
 .pricing-option .price {
 	font-size: 36px;
 	font-weight: 700;
-	margin-bottom: 20px;
 }
 .pricing-option ul {
 	list-style: none;
@@ -294,6 +293,10 @@ nav a:hover, nav a:focus {
 }
 .pricing-option ul li {
 	margin-bottom: 10px;
+}
+.month-price{
+	margin-top: -5%;
+	margin-bottom: 10%;
 }
 /* Styles du footer */
 footer {
