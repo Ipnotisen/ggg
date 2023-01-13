@@ -151,9 +151,6 @@ nav a:hover, nav a:focus {
 	padding: 350px 0;
 	max-height: 250px;
 }
-.hero-img{
-	margin-top: -10%;
-}
 .hero-top {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -366,7 +363,7 @@ footer .social-links img {
 	margin-left: 10px;
 }
 /* Médias queries */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 	.nav-container {
 		background-color: transparent;
 	}
@@ -389,7 +386,18 @@ footer .social-links img {
 		color: #333;
 	}
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 1200px){
+	.hero{
+		padding: 250px 0;
+	}
+	.hero h1{
+		font-size: 2.5rem;
+	}
+	.hero p {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 1024px) {
 	.logo {
 		font-size: 20px;
 	}
@@ -476,52 +484,16 @@ footer .social-links img {
 			border-bottom: solid;
 		}
 	.hero {
-		padding: 300px 0;
+		padding: 200px 0;
 	}
 	.hero h1 {
 		font-size: 2rem;
 	}
-	.hero-grid1{
-		margin-top: -25%;
-	}
-}
-@media (max-width: 767px) {
-	.container {
-		padding: 0 10px;
-	}
-	.logo {
-		float: none;
-		height: 70px;
-		line-height: 70px;
-		font-size: 18px;
-	}
-	nav {
-		float: none;
-		text-align: center;
-	}
-	nav a {
-		display: block;
-		height: 50px;
-		line-height: 50px;
-		padding: 0;
-		font-size: 16px;
-	}
-	.hero {
-		padding: 300px 0;
-	}
-	.hero h1 {
-		font-size: 30px;
-	}
 	.hero p {
-		font-size: 16px;
-	}
-	.features .feature,
-	.testimonials .testimonial,
-	.pricing .pricing-option {
-		padding: 20px;
+		font-size: 1rem;
 	}
 }
-@media (max-width: 575px) {
+@media screen and (max-width: 768px) {
 	.container {
 		padding: 0 10px;
 	}
@@ -545,14 +517,61 @@ footer .social-links img {
 	.hero {
 		padding: 200px 0;
 	}
-	.hero-img{
-		margin-top: 0%;
+	.hero img{
+		margin-top: 50%;
+	}
+	.hero h1 {
+		font-size: 30px;
+	}
+	.hero p {
+		font-size: 16px;
+	}
+	.features .feature,
+	.testimonials .testimonial,
+	.pricing .pricing-option {
+		padding: 20px;
+	}
+	.btn{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		padding: 0 10px;
+	}
+	.logo {
+		float: none;
+		height: 70px;
+		line-height: 70px;
+		font-size: 18px;
+	}
+	nav {
+		float: none;
+		text-align: center;
+	}
+	nav a {
+		display: block;
+		height: 50px;
+		line-height: 50px;
+		padding: 0;
+		font-size: 16px;
+	}
+	.hero {
+		padding: 200px 0;
+	}
+	.hero img{
+		margin-top: 15%;
+		max-width: 250px;
 	}
 	.hero h1 {
 		font-size: 1.5rem;
 	}
 	.hero-grid1{
-		margin-top: -45%;
+		grid-area: 2 / 3 / 3 / 4;
+		margin-top: 0%;
+	}
+	.hero-grid2{
+		grid-area: 1 / 3 / 2 / 4;
 	}
 	.hero p {
 		font-size: 1rem;
