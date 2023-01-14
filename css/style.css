@@ -568,6 +568,15 @@ footer .social-links img {
 	.pricing .pricing-option {
 		padding: 10px;
 	}
+	.features h2{
+		font-size: 1.5rem;
+	}
+	.features p{
+		font-size: 1rem;
+	}
+	.feature img{
+		max-width: 70px;
+	}
 	.pricing .pricing-table {
 		flex-wrap: wrap;
 		padding: 0 1rem;
