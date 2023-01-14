@@ -1,3 +1,4 @@
+// Animation on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -12,19 +13,25 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+// Dark mode switch
 const checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener('click', () => {
     const body = document.body;
-    if(body.classList.contains('dark')){
-
+    if (body.classList.contains('dark')) {
         body.classList.add('light')
         body.classList.remove('dark')
-
-    } else if(body.classList.contains('light')){
-
+    } else if (body.classList.contains('light')) {
         body.classList.add('dark')
         body.classList.remove('light')
-
     }
 })
+
+// Nav mobile
+const toggleMobile = document.querySelector(".menu-toggle-mobile");
+const navMobile = document.querySelector(".nav-mobile");
+
+toggleMobile.addEventListener("click", function() {
+    this.classList.toggle("active");
+    navMobile.classList.toggle("active");
+});
