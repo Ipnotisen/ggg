@@ -91,7 +91,7 @@
 		<div class="container">
 			<h2>Tarifs</h2>
 			<div class="pricing-table">
-				<div class="pricing-option">
+				<div class="pricing-option" id="amateur-card">
 					<h3>Package Amateur</h3>
 					<ul>
 						<li>Page tout en un</li>
@@ -102,9 +102,22 @@
 					</ul>
 					<div class="price">500 €</div>
 					<div class="month-price">Puis 89 €/mois</div>
-					<a href="#" class="btn btn-secondary">Choisir</a>
+					<a href="#modal-amateur" class="btn btn-secondary">Details</a>
+					<div id="modal-amateur">
+						<a href="#amateur-card" class="close"></a>
+						<div id="modal-inner">
+						  <h2>Package Amateur</h2>
+						  <ul>
+							<li>&#x2192; Nom de domaine</li>
+							<li>&#x2192; Hebergement</li>
+							<li>&#x2192; Adresse Email professionnel</li>
+							<li>&#x2192; Optimisation sur les moteurs de recherche</li>
+							<li>&#x2192; Design adapter sur tout les ecrans</li>
+						  </ul>
+						</div>
+					</div>
 				</div>
-				<div class="pricing-option recommended">
+				<div class="pricing-option recommended" id="pro-card">
 					<div class="pricing-img hidden">
 						<img src="images/icon-recommended.svg" alt="Icône Recommandation">
 					</div>
@@ -118,7 +131,20 @@
 					</ul>
 					<div class="price">1 250 €</div>
 					<div class="month-price">Puis 149 €/mois</div>
-					<a href="#" class="btn btn-secondary">Choisir</a>
+					<a href="#modal-pro" class="btn btn-secondary">Details</a>
+					<div id="modal-pro">
+						<a href="#pro-card" class="close"></a>
+						<div id="modal-inner">
+						  <h2>Package Pro</h2>
+						  <ul>
+							<li>&#x2192; Nom de domaine</li>
+							<li>&#x2192; Hebergement</li>
+							<li>&#x2192; Adresse Email professionnel</li>
+							<li>&#x2192; Optimisation sur les moteurs de recherche</li>
+							<li>&#x2192; Design adapter sur tout les ecrans</li>
+						  </ul>
+						</div>
+					</div>
 				</div>
 				<div class="pricing-option">
 					<h3>Package Perso</h3>
@@ -131,7 +157,7 @@
 						<li>E-commerce</li>
 						<div class="month-price">Puis 149 €/mois</div>
 					</ul>
-					<a href="#" class="btn btn-secondary">Choisir</a>
+					<a href="#" class="btn btn-secondary">Details</a>
 				</div>
 			</div>
 		</div>
@@ -155,14 +181,5 @@
 		navMobile.classList.toggle("active");
 	});
 	</script>
-	<script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-		anchor.addEventListener('click', function (e) {
-			e.preventDefault();
-	
-			document.querySelector(this.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth'
-			});
-		});
-	});</script>
 </body>
 </html>
