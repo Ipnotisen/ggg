@@ -526,9 +526,6 @@ footer .social-links img {
 	}
 }
 @media screen and (max-width: 600px) {
-	.container {
-		padding: 0 3rem;
-	}
 	.logo {
 		float: none;
 		height: 70px;
@@ -551,7 +548,7 @@ footer .social-links img {
 	}
 	.hero img{
 		margin-top: 15%;
-		max-width: 250px;
+		max-width: 200px;
 	}
 	.hero h1 {
 		font-size: 1.5rem;
@@ -573,7 +570,7 @@ footer .social-links img {
 	}
 	.pricing .pricing-table {
 		flex-wrap: wrap;
-		padding: 0 6rem;
+		padding: 0 1rem;
 	}
 	.pricing .pricing-option {
 		width: 100%;
@@ -582,8 +579,7 @@ footer .social-links img {
 		margin: 3rem 0;
 	}
 	.pricing-img{
-		top: 169.3rem;
-		right: 70%;
+		display: none;
 	}
 	.month-price{
 		margin-top: -3%;
