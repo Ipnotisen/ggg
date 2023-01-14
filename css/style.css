@@ -298,7 +298,7 @@ nav a:hover, nav a:focus {
 .pricing-img{
 	max-width: 50px;
 	position: absolute;
-	right: 55.6%;
+	right: 55%;
 	top: 168.1rem;
 	filter: invert(57%) sepia(87%) saturate(2680%) hue-rotate(163deg) brightness(105%) contrast(110%);
 	transition: all 0.4s;
@@ -309,7 +309,9 @@ nav a:hover, nav a:focus {
 	border-color: #ff00ef;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.pricing-option:hover{
+.pricing-option:hover,
+.pricing-option:active,
+.pricing-option:focus{
 	border-color: #00c3ff;
 	box-shadow: 15px 30px 30px rgba(0, 0, 0, 0.3);
 }
@@ -363,7 +365,7 @@ footer .social-links img {
 	margin-left: 10px;
 }
 /* Médias queries */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 961px) {
 	.nav-container {
 		background-color: transparent;
 	}
@@ -386,18 +388,7 @@ footer .social-links img {
 		color: #333;
 	}
 }
-@media screen and (max-width: 1200px){
-	.hero{
-		padding: 250px 0;
-	}
-	.hero h1{
-		font-size: 2.5rem;
-	}
-	.hero p {
-		font-size: 1.2rem;
-	}
-}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 	.logo {
 		font-size: 20px;
 	}
@@ -449,42 +440,39 @@ footer .social-links img {
 		display: none;
 	}
 	.nav-mobile {
-			display: none;
-			position: fixed;
-			top: 60px;
-			left: 0;
-			right: 0;
-			z-index: 998;
-			padding: 50px 100px;
-			background-color: rgba(255, 255, 255, 0.8);
-			backdrop-filter: saturate(180%) blur(20px);
-			text-align: center;
-		}
-		.nav-mobile.active {
-			display: block;
-		}
-		.nav-mobile li {
-			display: block;
-			margin: 20px 0;
-		}
-		.nav-mobile a {
-			display: block;
-			color: #333;
-			font-size: 18px;
-			text-decoration: none;
-			transition: all 0.3s;
-			border: solid;
-		}
-		.nav-mobile a:hover,
-		.nav-mobile a:focus {
-			color: #000;
-		}
-		.menu-toggle-mobile.active ~ nav .nav-mobile {
-			display: block;
-			border-bottom: solid;
-		}
-	.hero {
-		padding: 200px 0;
+		display: none;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		right: 0;
+		z-index: 998;
+		padding: 50px 100px;
+		background-color: rgba(255, 255, 255, 0.8);
+		backdrop-filter: saturate(180%) blur(20px);
+		text-align: center;
+	}
+	.nav-mobile.active {
+		display: block;
+	}
+	.nav-mobile li {
+		display: block;
+		margin: 20px 0;
+	}
+	.nav-mobile a {
+		display: block;
+		color: #333;
+		font-size: 18px;
+		text-decoration: none;
+		transition: all 0.3s;
+		border: solid;
+	}
+	.nav-mobile a:hover,
+	.nav-mobile a:focus {
+		color: #000;
+	}
+	.menu-toggle-mobile.active ~ nav .nav-mobile {
+		display: block;
+		border-bottom: solid;
 	}
 	.hero h1 {
 		font-size: 2rem;
@@ -492,10 +480,13 @@ footer .social-links img {
 	.hero p {
 		font-size: 1rem;
 	}
+	.pricing-img{
+		right: 58.3%;
+	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
 	.container {
-		padding: 0 10px;
+		padding: 0 20px;
 	}
 	.logo {
 		float: none;
@@ -514,12 +505,6 @@ footer .social-links img {
 		padding: 0;
 		font-size: 16px;
 	}
-	.hero {
-		padding: 200px 0;
-	}
-	.hero img{
-		margin-top: 50%;
-	}
 	.hero h1 {
 		font-size: 30px;
 	}
@@ -534,10 +519,15 @@ footer .social-links img {
 	.btn{
 		font-size: 14px;
 	}
+	.pricing-img{
+		max-width: 40px;
+		top: 158.2rem;
+		right: 60%;
+	}
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 	.container {
-		padding: 0 10px;
+		padding: 0 3rem;
 	}
 	.logo {
 		float: none;
@@ -583,9 +573,20 @@ footer .social-links img {
 	}
 	.pricing .pricing-table {
 		flex-wrap: wrap;
+		padding: 0 6rem;
 	}
 	.pricing .pricing-option {
 		width: 100%;
+	}
+	.pricing-option.recommended{
+		margin: 3rem 0;
+	}
+	.pricing-img{
+		top: 169.3rem;
+		right: 70%;
+	}
+	.month-price{
+		margin-top: -3%;
 	}
 }
 
