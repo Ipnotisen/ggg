@@ -3,7 +3,6 @@
 	src: url(../fonts/ClashGrotesk-Medium.otf);
 }
 :root{
-	--font-dark-color: #000;
 	--font-main-family: ClashGrotesk;
 	--font-text-family: Synonym;
 }
@@ -44,7 +43,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: var(--font-dark-color);
+	color: #000;
 	background-color: #f9f9f9;
 }
 section {
@@ -73,7 +72,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-main-family);
 	font-weight: 900;
-	color: var(--font-dark-color);
+	color: #000;
 	margin: 1rem 0;
 	font-size: 2.5rem;
 }
@@ -148,7 +147,7 @@ nav a:hover, nav a:focus {
 	/* background-image: url("../images/hero-bg2.jpg"); */
 	background-size: cover;
 	background-position: center;
-	color: var(--font-dark-color);
+	color: #000;
 	padding: 350px 0;
 	max-height: 250px;
 }
@@ -182,7 +181,7 @@ nav a:hover, nav a:focus {
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 40px;
-	color: var(--font-dark-color);
+	color: #000;
 }
 .btn {
 	display: inline-block;
@@ -196,7 +195,7 @@ nav a:hover, nav a:focus {
 }
 .btn-primary {
 	/* background-color: #c6e3ec; */
-	color: var(--font-dark-color);
+	color: #000;
 	background-color: #ff00ef;
 	box-shadow: -2px 2px 8px rgb(255, 0, 238);
 	border-radius: 90px;
@@ -214,7 +213,7 @@ nav a:hover, nav a:focus {
 .btn-secondary {
 	background-color: #00c3ff;
 	box-shadow: -2px 2px 8px rgb(0, 195, 255);
-	color: var(--font-dark-color);
+	color: #000;
 	border-radius: 90px;
 }
 .btn-secondary:hover, .btn-secondary:focus {
@@ -269,7 +268,7 @@ nav a:hover, nav a:focus {
 	display: block;
 	font-style: normal;
 	font-weight: 600;
-	color: var(--font-dark-color);
+	color: #000;
 }
 /* Styles de la section tarifs */
 .pricing {
@@ -400,7 +399,7 @@ nav a:hover, nav a:focus {
 /* Styles du footer */
 footer {
 	background-color: #f2efef;
-	color: var(--font-dark-color);
+	color: #000;
 	padding: 40px 0;
 }
 footer .container {
@@ -505,6 +504,9 @@ footer .social-links img {
 		background-color: rgba(255, 255, 255, 0.8);
 		backdrop-filter: saturate(180%) blur(20px);
 		text-align: center;
+	}
+	body.dark .nav-mobile{
+		background-color: rgba(20, 20, 20, 0.8);
 	}
 	.nav-mobile.active {
 		display: block;
@@ -680,4 +682,95 @@ footer .social-links img {
 	.hidden{
 		transition: none;
 	}
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+  }
+  
+  .label {
+	width: 50px;
+	height: 20px;
+	background-color: rgba(51, 51, 51, 0.5);
+	display: flex;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px;
+	position: relative;
+	transform: scale(1.5);
+  }
+  
+  .ball {
+	width: 24px;
+	height: 24px;
+	background-color: white;
+	position: fixed;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+	transform: translateX(27px);
+  }
+  
+  .img-moon,
+  .img-sun {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(236deg) brightness(108%) contrast(101%);
+	height: 20px;
+	width: 20px;
+  }
+  .switch-mode{
+	padding-top: 1.25rem;
+  }
+
+body.dark {
+	background-color: #222;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3{
+	color: #f9f9f9;
+}
+body.dark .hero p{
+	color: #f9f9f9;
+}
+body.dark header{
+	background-color: rgba(20, 20, 20, 0.8);
+}
+body.dark nav a{
+	color: #f9f9f9;
+}
+body.dark .features{
+	background-color: #111;
+}
+body.dark .feature-bg{
+	background-color: #222;
+}
+body.dark .feature img{
+	filter: invert(100%) sepia(99%) saturate(1167%) hue-rotate(179deg) brightness(113%) contrast(96%);
+}
+body.dark .feature p{
+	color: #f9f9f9;
+}
+body.dark .pricing{
+	background-color: #222;
+}
+body.dark .pricing-option{
+	color: #ddd;
+}
+body.dark .pricing-option.recommended h3{
+	color: #fff;
+}
+body.dark .pricing-option.recommended{
+	color: #fff;
+}
+body.dark .pricing-option:hover{
+	box-shadow: 15px 30px 30px rgba(255, 255, 255, 0.3);
+}
+body.dark footer{
+	background-color: #111;
+	color: #ccc;
 }
