@@ -14,8 +14,18 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Dark mode switch
-const checkbox = document.getElementById('checkbox');
+window.onload = function(){
+    const chk = document.getElementById('checkbox');
+    const storedPosition = localStorage.getItem(chk.id);
+    console.log("Saved input value: " + !!+storedPosition);
+    chk.checked = +storedPosition;
 
+    chk.addEventListener("change", () => {
+        localStorage.setItem(this.id, +this.checked);
+    })
+};
+
+const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('click', () => {
     const body = document.body;
     if (body.classList.contains('dark')) {
@@ -25,7 +35,7 @@ checkbox.addEventListener('click', () => {
         body.classList.add('dark')
         body.classList.remove('light')
     }
-})
+});
 
 // Nav mobile
 const toggleMobile = document.querySelector(".menu-toggle-mobile");
