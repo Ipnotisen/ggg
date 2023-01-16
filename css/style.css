@@ -243,6 +243,7 @@ nav a:hover, nav a:focus {
 	display: block;
 	margin: 0 auto 20px;
 	max-width: 90px;
+	max-height: 90px;
 }
 .feature p{
 	font-size: 1.3rem;
