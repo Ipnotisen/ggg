@@ -392,10 +392,6 @@ nav a:hover, nav a:focus {
 	opacity: 0.8;
 	transition: opacity 200ms; 
 }
-#modal-amateur span,
-#modal-pro span{
-	visibility: hidden;
-}
 #modal-amateur a.close:hover {
 	opacity: 0.9; 
 }
