@@ -338,6 +338,10 @@ nav a:hover, nav a:focus {
 .pricing-option ul li {
 	margin-bottom: 10px;
 }
+.price-top{
+	margin-bottom: -12px;
+	margin-top: 2rem;
+}
 .month-price{
 	margin-top: -5%;
 	margin-bottom: 10%;
