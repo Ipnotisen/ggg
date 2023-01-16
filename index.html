@@ -25,7 +25,6 @@
 					<li><a href="#hero">Accueil</a></li>
 					<li><a href="#features">À propos</a></li>
 					<li><a href="#price">Tarifs</a></li>
-					<!-- <li><a href="#">Témoignages</a></li> -->
 					<li><a href="#">Contact</a></li>
 					<li>
 						<div class="switch-mode">
@@ -83,25 +82,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="testimonials">
-		<div class="container">
-			<h2>Ils nous font confiance</h2>
-			<div class="testimonial">
-				<img src="avatar-1.jpg" alt="Avatar">
-				<blockquote>
-					<p>Depuis que j'ai confié la création de mon site à votre équipe, ma visibilité en ligne a considérablement augmenté. Je suis vraiment satisfait du résultat et de l'assistance que j'ai reçue.</p>
-				</blockquote>
-				<cite>- Marie Dupont, Artisan boulanger</cite>
-			</div>
-			<div class="testimonial">
-				<img src="avatar-2.jpg" alt="Avatar">
-				<blockquote>
-					<p>Grâce à votre offre tout-en-un, j'ai pu créer rapidement et facilement un site professionnel qui reflète parfaitement mon activité. Je recommande vivement votre service.</p>
-				</blockquote>
-				<cite>- Julien Martin, Artisan menuisier</cite>
-			</div>
-		</div>
-	</section> -->
 	<section class="pricing" id="price">
 		<div class="container">
 			<h2>Tarifs</h2>
@@ -181,17 +161,17 @@
 						  </ul>
 						  <form action="https://formsubmit.co/486a3a5717c202343105cfb9ede65492" method="POST">
 							<input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-							<div>SUJET</div>
-							<input type="text" name="subject" value="Package Pro" required/>
+							<div id="Sujet">SUJET</div>
+							<input type="text" name="subject" value="Package Pro" aria-labelledby="Sujet" required/>
 						
-							<div>NOM</div>
-							<input type="text" name="Name" placeholder="Votre nom.." required/>
+							<div id="Nom">NOM</div>
+							<input type="text" name="Name" placeholder="Votre nom.." aria-labelledby="Nom" required/>
 
-							<div>PRENOM</div>
-							<input type="text" name="Prenom" placeholder="Votre prenom.." required/>
+							<div id="Prenom">PRENOM</div>
+							<input type="text" name="Prenom" placeholder="Votre prenom.." aria-labelledby="Prenom" required/>
 						
-							<div>E-MAIL</div>
-							<input type="text" name="E-Mail Address" placeholder="Votre adresse e-mail.." required/>
+							<div id="Email">E-MAIL</div>
+							<input type="text" name="E-Mail Address" placeholder="Votre adresse e-mail.." aria-labelledby="Email" required/>
 						
 							<div>MESSAGE</div>
 							<textarea name="Message" placeholder="Votre demande.."></textarea>
