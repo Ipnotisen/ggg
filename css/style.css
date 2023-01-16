@@ -342,6 +342,10 @@ nav a:hover, nav a:focus {
 	margin-bottom: -12px;
 	margin-top: 2rem;
 }
+.price-after{
+	margin-top: 7rem;
+	margin-bottom: 2rem;
+}
 .month-price{
 	margin-top: -5%;
 	margin-bottom: 10%;
