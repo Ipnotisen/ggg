@@ -183,6 +183,32 @@ nav a:hover, nav a:focus {
 	margin-bottom: 40px;
 	color: #000;
 }
+.hero-icon{
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+
+.hero-contact{
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 2em;
+}
+.hero-contact a{
+	color: inherit;
+}
+.hero-img-contact{
+	position: relative;
+}
+.form-contact{
+	position: absolute;
+	top: 7rem;
+	left: 14rem;
+	font-family:'Courier New', Courier, monospace;
+	width: 18rem;
+}
 .btn {
 	display: inline-block;
 	padding: 12px 24px;
@@ -298,12 +324,13 @@ nav a:hover, nav a:focus {
 .pricing-img{
 	max-width: 50px;
 	position: absolute;
-	right: 55%;
-	top: 168.1rem;
+	left: 0;
+	top: 0;
 	filter: invert(57%) sepia(87%) saturate(2680%) hue-rotate(163deg) brightness(105%) contrast(110%);
 	transition: all 0.4s;
 }
 .pricing-option.recommended {
+	position: relative;
 	margin: 0 50px;
 	color: #000;
 	border-color: #ff00ef;
@@ -427,6 +454,7 @@ textarea{
 .submit-btn:hover{
 	width: 102%;
 	background-color: #ff00ef;
+	cursor: pointer;
 }
 /* Styles du footer */
 footer {
@@ -569,9 +597,6 @@ footer .social-links img {
 	.hero p {
 		font-size: 1rem;
 	}
-	.pricing-img{
-		right: 58.3%;
-	}
 	#modal-inner{
 		width: 30% !important;
 		line-height: 1.6 !important;
@@ -617,8 +642,6 @@ footer .social-links img {
 	}
 	.pricing-img{
 		max-width: 40px;
-		top: 158.2rem;
-		right: 60%;
 	}
 	#modal-inner{
 		width: 50% !important;
@@ -653,7 +676,7 @@ footer .social-links img {
 	.hero {
 		padding: 200px 0;
 	}
-	.hero img{
+	.hero-img{
 		margin-top: 15%;
 		max-width: 200px;
 	}
@@ -694,9 +717,6 @@ footer .social-links img {
 	}
 	.pricing-option.recommended{
 		margin: 3rem 0;
-	}
-	.pricing-img{
-		display: none;
 	}
 	.month-price{
 		margin-top: -3%;
@@ -780,6 +800,12 @@ body.dark .mobile__line{
 }
 body.dark nav a:hover, nav a:focus {
 	color: #fff;
+}
+body.dark .hero-icon{
+	filter: invert(100%) sepia(99%) saturate(1167%) hue-rotate(179deg) brightness(113%) contrast(96%);
+}
+body.dark .hero-contact{
+	color: #ddd;
 }
 body.dark .features{
 	background-color: #111;

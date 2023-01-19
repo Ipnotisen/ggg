@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Contacter-nous - NOMDELASOCIETER</title>
+	<meta name="description" content="Nous offrons des services de création de sites internet professionnels, avec un hébergement inclus pour vous assurer une présence en ligne optimale.">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="app.js"></script>
+</head>
+<body class="light">
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <div class="nav-container">
+                <button type="button" class="menu-toggle-mobile">
+                    <div class="mobile__line"></div>
+                    <div class="mobile__line"></div>
+                    <div class="mobile__line"></div>
+                </button>
+                <nav>
+                    <ul class="nav-mobile">
+                        <li><a href="/index.html">Accueil</a></li>
+                        <li><a href="/index.html#features">À propos</a></li>
+                        <li><a href="/index.html#price">Tarifs</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li>
+                            <div class="switch-mode">
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="label">
+                                  <i class="img-moon">
+                                    <img src="images/icon-moon.svg" alt="Icône Lune">
+                                  </i>
+                                  <i class="img-sun">
+                                    <img src="images/icon-sun.svg" alt="Icône Soleil">
+                                  </i>
+                                <div class="ball"></div>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-top">
+                <div class="container hero-grid1 hidden">
+                    <h1>Nos <span class="hero-title-bg">coordonnées</span> de contact</h1>
+                    <div class="hero-contact">
+                        <img class="hero-icon" src="/images/icon-email.svg" alt="Icône Email">
+                        <a href="mailto:bonjour@tamere.fr">bonjour@tamere.fr</a>
+                    </div>
+                    <div class="hero-contact">
+                        <img class="hero-icon" src="/images/icon-online.svg" alt="Icône Disponibilité">
+                        Du Lundi au Vendredi de 9h à 18h 
+                    </div>
+                    <div class="hero-contact">
+                        <img class="hero-icon" src="/images/icon-phone.svg" alt="Icône Téléphone">
+                        09 99 99 99 99
+                    </div>
+                </div>
+                <div class="container hero-grid2 hidden">
+                    <img class="hero-img-contact" src="images/hero-img3.png" alt="Ordinateur avec fond transparent ou une page est ouverte"></img>
+                    <div class="form-contact">
+                        <form action="https://formsubmit.co/486a3a5717c202343105cfb9ede65492" method="POST">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                            <div id="Sujet_Amateur">Sujet</div>
+                            <input type="text" name="subject" placeholder="Votre demande.." aria-labelledby="Sujet_Amateur" required/>
+                        
+                            <div id="Nom_Amateur">Nom</div>
+                            <input type="text" name="Name" placeholder="Votre nom.." aria-labelledby="Nom_Amateur" required/>
+
+                            <div id="Prenom_Amateur">Prenom</div>
+                            <input type="text" name="Prenom" placeholder="Votre prenom.." aria-labelledby="Prenom_Amateur" required/>
+                        
+                            <div id="Email_Amateur">E-mail</div>
+                            <input type="text" name="E-Mail Address" placeholder="Votre adresse e-mail.." aria-labelledby="Email_Amateur" required/>
+                        
+                            <div>Message</div>
+                            <textarea name="Message" placeholder="Votre demande.."></textarea>
+                        
+                            <br/>
+                            <input class="submit-btn" type="submit" value="ENVOYER" />
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="copyright">&copy; Votre entreprise</div>
+                <div class="social-links">
+                    <a href="#"><img src="icon-facebook.png" alt="Icône Facebook"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Icône Twitter"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
