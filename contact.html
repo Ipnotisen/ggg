@@ -81,7 +81,7 @@
                             <input type="text" name="E-Mail Address" placeholder="Votre adresse e-mail.." aria-labelledby="Email_Contact" required/>
                         
                             <div>Message</div>
-                            <textarea name="Message_Contact" placeholder="Votre demande.." rows="5"></textarea>
+                            <textarea name="Message_Contact" placeholder="Votre demande.." rows="5" required></textarea>
                         
                             <br/>
                             <input class="submit-btn" type="submit" value="ENVOYER" />
@@ -103,12 +103,12 @@
                         <div class="contact-categorie" id="Package">Type de package</div>
                         <div class="contact-checkbox">
                             <label>
-                                <input type="radio" name="Package_Choice" value="Package_Amateur" aria-labelledby="Package"/>
-                                Package Amateur
+                                <input type="radio" name="Package_Choice" value="Package_Amateur" aria-labelledby="Package" required/>
+                                Package Amateur (1 page)
                             </label>
                             <label>
                                 <input type="radio" name="Package_Choice" value="Package_Pro" aria-labelledby="Package"/>
-                                Package Pro
+                                Package Pro (Jusqu'a 4 pages)
                             </label>
                             <label>
                                 <input type="radio" name="Package_Choice" value="Package_Perso" aria-labelledby="Package"/>
@@ -172,7 +172,7 @@
                         <div class="contact-checkbox-grid">
                             <div class="contact-grid1">
                                 <label>
-                                    <input type="radio" name="Graphique_Choice" value="Graphique_Refonte" aria-labelledby="Graphique"/>
+                                    <input type="radio" name="Graphique_Choice" value="Graphique_Refonte" aria-labelledby="Graphique" required/>
                                     Refonte de votre logo (Via base graphique)
                                 </label>
                                 <br><br>
@@ -195,7 +195,7 @@
                         <div class="contact-checkbox-grid">
                             <div class="contact-grid1">
                                 <label>
-                                    <input type="radio" name="Ecriture_Choice" value="Ecriture_Oui" aria-labelledby="Ecriture"/>
+                                    <input type="radio" name="Ecriture_Choice" value="Ecriture_Oui" aria-labelledby="Ecriture" required/>
                                     Oui (Votre contenu sera optimiser pour le referencement)
                                 </label>
                             </div>
