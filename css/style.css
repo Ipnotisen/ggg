@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Nebularegular';
-    src: url('/fonts/nebula-regular-webfont.woff2') format('woff2'),
-         url('/fonts/nebula-regular-webfont.woff') format('woff');
+    src: url('../fonts/nebula-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nebula-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Kionaregular';
-    src: url('/fonts/kiona-regular-webfont.woff2') format('woff2'),
-         url('/fonts/kiona-regular-webfont.woff') format('woff');
+    src: url('../fonts/kiona-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kiona-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Robotoregular';
-    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('/fonts/roboto-regular-webfont.woff') format('woff');
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
