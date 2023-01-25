@@ -7,6 +7,9 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('fondu-out');
         document.body.style.overflow = "visible";
+        loader.style.display = "none";
+        modalPro.style.display = "none";
+        modalAmateur.style.display = "none";
     }, 1200);
 });
 
@@ -55,4 +58,32 @@ const navMobile = document.querySelector(".nav-mobile");
 toggleMobile.addEventListener("click", function() {
     this.classList.toggle("active");
     navMobile.classList.toggle("active");
+});
+
+// Close Modal
+const modalAmateur = document.getElementById("modal-amateur");
+const modalPro = document.getElementById("modal-pro");
+const closeButton = document.querySelectorAll('.close');
+const openAmateur = document.querySelector("#open-amateur");
+const openPro = document.querySelector("#open-pro");
+
+closeButton.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalAmateur.style.display = "none";
+    });
+});
+
+closeButton.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalPro.style.display = "none";
+    });
+});
+
+openAmateur.addEventListener('click', (e) => {
+    modalAmateur.style.display = "block";
+});
+openPro.addEventListener('click', (e) => {
+    modalPro.style.display = "block";
 });
