@@ -318,9 +318,6 @@ nav a:hover, nav a:focus {
 	margin-bottom: 40px;
 	color: #000;
 }
-.hero-contact a{
-	color: inherit;
-}
 .hero-img-contact{
 	position: relative;
 }
@@ -541,6 +538,7 @@ textarea{
 	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 0.9px;
+	font-family: var(--font-title-family);
 }
 .submit-btn:hover{
 	width: 102%;
@@ -559,6 +557,10 @@ textarea{
 	font-weight: bold;
 	color: #000;
 	margin-bottom: 2em;
+}
+.hero-contact a{
+	font-family: var(--font-main-family);
+	color: inherit;
 }
 .form-contact{
 	position: absolute;
@@ -639,23 +641,28 @@ footer .social-links img {
 /* FAQ */
 .faq-bg{
 	padding-top: 5rem;
+	text-align: center;
 }
 .faq-content{
 	display: grid;
 	place-items:  center;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr); 
 	grid-column-gap: 0px;
 	grid-row-gap: 0px; 
+	padding: 0 15rem;
+}
+.faq-content h3{
+	font-size: 2rem;
 }
 .faq-content p{
 	font-size: 18px;
 }
 .faq-l{
-	grid-area: 1 / 2;
+	grid-area: 1 / 1;
 }
 .faq-i{
-	grid-area: 1 / 3;
+	grid-area: 1 / 2;
 }
 .faq-i img{
 	transition-delay: 200ms;
@@ -665,25 +672,25 @@ footer .social-links img {
 	height: 120px;
 }
 .faq-r{
-	margin-top: -20%;
-	grid-area: 1 / 4;
+	margin-top: -12%;
+	grid-area: 1 / 3;
 	transition-delay: 400ms;
 }
 .faq-i2{
-	grid-area: 2 / 2;
+	grid-area: 2 / 1;
 }
 .faq-i2 img{
 	margin-top: -30%;
 	transition-delay: 600ms;
 }
 .faq-c{
-	grid-area: 2 / 3;
-	margin-top: -30%;
-	margin-bottom: 20%;
+	grid-area: 2 / 2;
+	margin-top: -15%;
+	margin-bottom: 15%;
 	transition-delay: 800ms;
 }
 .faq-i3{
-	grid-area: 2 / 4;
+	grid-area: 2 / 3;
 }
 .faq-i3 img{
 	margin-top: -30%;
@@ -906,6 +913,19 @@ body.dark footer{
 	#modal-inner h2{
 		font-size: 2rem;
 	}
+	.faq-content{
+		padding: 0 5rem;
+	}
+	.faq-content img {
+		width: 100px;
+		height: 100px;
+	}
+	.faq-content h3 {
+		font-size: 1.8rem;
+	}
+	.faq-content p {
+		font-size: 1rem;
+	}
 }
 @media screen and (max-width: 960px) {
 	.container {
@@ -945,6 +965,20 @@ body.dark footer{
 	.pricing-img{
 		max-width: 40px;
 	}
+	.pricing .pricing-table {
+		flex-wrap: wrap;
+		padding: 0 10rem;
+	}
+	.pricing .pricing-option {
+		width: 100%;
+		padding: 4rem 0;
+	}
+	.pricing-option.recommended{
+		margin: 3rem 0;
+	}
+	.month-price{
+		margin-top: -2%;
+	}
 	#modal-inner{
 		width: 50% !important;
 		line-height: 1.4 !important;
@@ -958,6 +992,34 @@ body.dark footer{
 	}
 	.hero-grid2.contact{
 		grid-area: 2 / 3 / 3 / 4;
+	}
+	.faq-content{
+		text-align: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr); 
+		padding: 0 40px;
+	}
+	.faq-i, 
+	.faq-i2,
+	.faq-i3{
+		display: none;
+	}
+	.faq h3{
+		font-size: 1.5rem;
+	}
+	.faq p{
+		font-size: 1rem;
+	}
+	.faq-l{
+		grid-area: 1 / 3;
+		max-height: 800px;
+	}
+	.faq-r{
+		grid-area: 2 / 3;
+	}
+	.faq-c{
+		grid-area: 3 / 3;
+		margin-top: -10%;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -1040,6 +1102,39 @@ body.dark footer{
 	.hero.contact {
 		padding: 350px 0;
 	}
+	.lettre{
+		font-size: 50px;
+	}
+	.faq-content{
+		text-align: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr); 
+		padding: 0 40px;
+	}
+	.faq-i, 
+	.faq-i2,
+	.faq-i3{
+		display: none;
+	}
+	.faq h3{
+		font-size: 1.5rem;
+	}
+	.faq p{
+		font-size: 1rem;
+	}
+	.faq-l{
+		grid-area: 1 / 3;
+		max-height: 800px;
+	}
+	.faq-r{
+		grid-area: 2 / 3;
+	}
+	.faq-c{
+		grid-area: 3 / 3;
+		margin-top: -15%;
+	}
+
+
 }
 
 @media(prefers-reduced-motion) {

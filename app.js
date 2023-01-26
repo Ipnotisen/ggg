@@ -1,18 +1,3 @@
-
-// Loader
-const loader = document.querySelector('.loader');
-
-window.addEventListener('load', () => {
-    document.body.style.overflow = "hidden";
-    setTimeout(() => {
-        loader.classList.add('fondu-out');
-        document.body.style.overflow = "visible";
-        loader.style.display = "none";
-        modalPro.style.display = "none";
-        modalAmateur.style.display = "none";
-    }, 1200);
-});
-
 // Animation on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -59,7 +44,19 @@ toggleMobile.addEventListener("click", function() {
     this.classList.toggle("active");
     navMobile.classList.toggle("active");
 });
+// Loader
+const loader = document.querySelector('.loader');
 
+window.addEventListener('load', () => {
+    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+        loader.classList.add('fondu-out');
+        document.body.style.overflow = "visible";
+        loader.style.display = "none";
+        modalPro.style.display = "none";
+        modalAmateur.style.display = "none";
+    }, 1200);
+});
 // Close Modal
 const modalAmateur = document.getElementById("modal-amateur");
 const modalPro = document.getElementById("modal-pro");
