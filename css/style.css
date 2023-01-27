@@ -487,7 +487,7 @@ nav a:hover, nav a:focus {
 	padding: 48px;
 	line-height: 1.6;
 	width: 20%;
-	top: 30rem;
+	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
@@ -699,6 +699,13 @@ footer .social-links img {
 .faq-content{
 	color: #000;
 }
+.faq-it{
+	font-style: italic;
+	color: #444;
+}
+.faq-r.ct{
+	margin-top: 15%;
+}
 /* Dark Mode */
 body.dark {
 	background-color: #222;
@@ -779,6 +786,9 @@ body.dark .contact-sub{
 }
 body.dark .faq-content p{
 	color: #fff;
+}
+body.dark .faq-it{
+	color: #aaa;
 }
 body.dark .faq-content img{
 	filter: invert(100%) sepia(99%) saturate(1167%) hue-rotate(179deg) brightness(113%) contrast(96%);
@@ -926,6 +936,9 @@ body.dark footer{
 	.faq-content p {
 		font-size: 1rem;
 	}
+	.faq-r.ct{
+		margin-top: 0%;
+	}
 }
 @media screen and (max-width: 960px) {
 	.container {
@@ -1020,6 +1033,10 @@ body.dark footer{
 	.faq-c{
 		grid-area: 3 / 3;
 		margin-top: -10%;
+	}
+	.faq-r.ct{
+		margin-top: 3%;
+		margin-bottom: 10%;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -1132,6 +1149,10 @@ body.dark footer{
 	.faq-c{
 		grid-area: 3 / 3;
 		margin-top: -15%;
+	}
+	.faq-r.ct{
+		margin-top: 3%;
+		margin-bottom: 20%;
 	}
 
 
