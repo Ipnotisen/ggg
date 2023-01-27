@@ -407,12 +407,24 @@ nav a:hover, nav a:focus {
 	color: #444;
 }
 .pricing-img{
-	max-width: 50px;
+	max-width: 40px;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 11px;
 	filter: invert(57%) sepia(87%) saturate(2680%) hue-rotate(163deg) brightness(105%) contrast(110%);
 	transition: all 0.4s;
+}
+.pricing-reco{
+	font-family: var(--font-title-family);
+	color: #00c3ff;
+	font-size: 0.8rem;
+	position: absolute;
+	left: 15%;
+	top: 18px;
+	transition: all 0.4s;
+}
+.pricing-option.recommended:hover .pricing-reco{
+	color: #ff00ef;
 }
 .pricing-option.recommended {
 	position: relative;
