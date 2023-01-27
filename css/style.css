@@ -1120,6 +1120,7 @@ body.dark footer{
 		padding: 350px 0;
 	}
 	.lettre{
+		letter-spacing: 0px;
 		font-size: 50px;
 	}
 	.faq-content{
