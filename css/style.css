@@ -576,10 +576,13 @@ textarea{
 }
 .form-contact{
 	position: absolute;
-	top: 10%;
+	top: 13%;
 	left: 27%;
 	font-family:'Courier New', Courier, monospace;
 	width: 45%;
+}
+.Message_C{
+	height: 5rem;
 }
 .formulaire-contact{
 	color: #000;
@@ -590,6 +593,7 @@ textarea{
 	grid-template-rows: 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px; 
+	margin-bottom: 2em;
 }
 #Nom_Devis{
 	grid-area: 1 / 1;
@@ -954,6 +958,12 @@ body.dark footer{
 	#modal-inner h2{
 		font-size: 2rem;
 	}
+	.form-contact{
+		top: 10%;
+	}
+	.Message_C{
+		height: 3rem;
+	}
 	.faq-content{
 		padding: 0 5rem;
 	}
@@ -1153,6 +1163,16 @@ body.dark footer{
 	.lettre{
 		letter-spacing: 0px;
 		font-size: 50px;
+	}
+	.Message_C{
+		height: 2rem;
+	}
+	.hero-img-contact{
+		height: 110%;
+	}
+	.form-contact{
+		top: 10%;
+		font-size: 0.8rem;
 	}
 	.faq-content{
 		text-align: center;
