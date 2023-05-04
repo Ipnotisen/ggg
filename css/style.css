@@ -762,6 +762,10 @@ footer .legal {
 .mentions-text p {
 	font-family: var(--font-main-family);
 }
+.mentions-text ul {
+	list-style-type: disc;
+	margin-left: 2.5rem;
+}
 /* Dark Mode */
 body.dark {
 	background-color: #222;
@@ -855,7 +859,8 @@ body.dark .faq-it{
 body.dark .faq-content img{
 	filter: invert(100%) sepia(99%) saturate(1167%) hue-rotate(179deg) brightness(113%) contrast(96%);
 }
-body.dark .mentions-text p{
+body.dark .mentions-text p,
+body.dark .mentions-text ul{
 	color: #ddd;
 }
 body.dark footer{
